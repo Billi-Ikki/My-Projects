@@ -1,0 +1,90 @@
+  .about-us-container {
+    background-color: #1e2a38;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    
+  }
+  
+  .about-us-container h2 {
+    color: #f0c040;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .about-us-container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .features-section {
+    text-align: center;
+  }
+  
+  .features-section h3 {
+    font-size: 2rem;
+    color: #f0c040;
+    margin-bottom: 1rem;
+  }
+  
+  .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 1.5rem;
+  }
+  
+  .feature-card {
+    background-color: #2a3b4d;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #f0c040;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card h4 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #ccd6e0;
+    line-height: 1.5;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.8rem;
+    color: #f0c040;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    color: #ccd6e0;
+    margin: 0.5rem 0;
+  }
+  

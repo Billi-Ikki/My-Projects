@@ -1,0 +1,73 @@
+.search-results-container {
+    padding: 20px;
+    background-color: #1e2a38; /* A rich dark background for contrast */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-results-container h1 {
+    color: #00d8ff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .game-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .game-card {
+    background-color: #2a3b4d;
+    border-radius: 15px; /* More rounded corners for a modern look */
+    padding: 15px;
+    text-align: center;
+    width: 300px; /* Wider for a balanced layout */
+    height: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Softer shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content nicely */
+  }
+  
+  .game-card:hover {
+    transform: translateY(-8px); /* Lift effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Stronger hover shadow */
+  }
+  
+  .game-card img {
+    width: 100%; /* Full width */
+    height: 350px; /* Fixed height for consistent size */
+    object-fit: cover; /* Maintains aspect ratio while cropping excess */
+    border-radius: 12px; /* Matches card corners */
+    margin-bottom: 15px;
+  }
+  
+  .game-card h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .game-card p {
+    color: #f5c542;
+    font-size: 16px; /* Larger and more visible */
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .game-cards {
+      gap: 15px; /* Smaller gap for mobile screens */
+    }
+  
+    .game-card {
+      width: 100%; /* Full width for smaller devices */
+      max-width: 350px;
+    }
+  }
+  

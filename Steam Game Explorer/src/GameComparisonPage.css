@@ -1,0 +1,93 @@
+.gamecomparison-container {
+  background-color: #1e2a38;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.comparison-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #f0c040;
+}
+
+.comparison-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.game-comparison-card {
+  background-color: #2a3b4d;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 48%;
+  text-align: center;
+}
+
+.game-image2 {
+  height: 300px; /* Fixed height for uniformity */
+  background-color: #5a6b7d;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+.game-image2 img {
+  width: 100%; /* Fill the width of the container */
+  height: 100%; /* Fill the height of the container */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the container */
+  border-radius: 5px; /* Matches the container's border radius */
+}
+
+.compare-button {
+  margin: 2rem auto;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #f0c040;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #1e2a38;
+  transition: background-color 0.3s;
+}
+
+.compare-button:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+.winner-announcement {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #f0c040;
+  margin-top: 2rem;
+}
+
+.game-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.game-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .game-comparison-card {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

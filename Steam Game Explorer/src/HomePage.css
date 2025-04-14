@@ -1,0 +1,88 @@
+.homepage-container {
+  background-color: #1e2a38;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure full height */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #2a3b4d;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.game-section {
+  background-color: #2a3b4d;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.game-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.game-card {
+  background-color: #3b4c5e;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  flex: 1 1 calc(33.33% - 1rem); /* Three cards per row */
+  box-sizing: border-box;
+}
+
+.game-title {
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+.game-rating {
+  color: #f0c040; /* Star color */
+  margin-top: 0.5rem;
+}
+
+.footer {
+  margin-top: auto; /* Push footer to the bottom */
+  padding: 10px; /* Add padding as needed */
+  background-color: #3b4c5e; /* Adjust as needed */
+  text-align: center;
+  color: white;
+  font-weight: 0.9rem;
+  
+}
+
+@media (max-width: 768px) {
+  .game-card {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+}
+
+.game-image {
+  height: 300px; /* Fixed height for uniformity */
+  background-color: #5a6b7d;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+.game-image img {
+  width: 100%; /* Fill the width of the container */
+  height: 100%; /* Fill the height of the container */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the container */
+  border-radius: 5px; /* Matches the container's border radius */
+}

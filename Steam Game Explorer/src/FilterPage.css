@@ -1,0 +1,76 @@
+/* Root container for the filter page */
+.filter-page {
+  background-color: #1e2a38;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header for the page */
+.filter-page-header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2a3b4d;
+  padding-bottom: 10px;
+}
+
+/* Genres section */
+.genres-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Genre button */
+.genre-button {
+  background-color: #3b4c5e;
+  color: #f0f0f0;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  flex: 0 1 calc(25% - 15px); /* Four buttons per row */
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.genre-button:hover {
+  background-color: #2a3b4d;
+  transform: translateY(-2px);
+}
+
+/* Selected genre button */
+.genre-button.selected {
+  background-color: #f0c040;
+  color: #1e2a38;
+  font-weight: bold;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .genre-button {
+    flex: 0 1 calc(50% - 15px); /* Two buttons per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .genre-button {
+    flex: 0 1 calc(100% - 15px); /* Full-width buttons on small screens */
+  }
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #3b4c5e;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}
